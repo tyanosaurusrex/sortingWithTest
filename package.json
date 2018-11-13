@@ -1,0 +1,22 @@
+{
+  "name": "latihan",
+  "version": "1.0.0",
+  "description": "untuk latihan aja, nyampah-nyampah, dan percobaan lainnya",
+  "main": "index.js",
+  "author": "tyanosaurusrex",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fs": "^0.0.1-security",
+    "linebyline": "^1.3.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "prompt": "^1.0.0",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
