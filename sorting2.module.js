@@ -34,11 +34,11 @@ function showData(input, data) {
   console.log('Total : ', comments.length)
   let currentPage = 1
   console.log(comments.slice((currentPage - 1) * 10, currentPage * 10))
-  // if (comments.length > 10) {
-    // askPageNav(comments, currentPage)
-  // } else {
-  //   showMenu()
-  // }
+  if (comments.length > 10) {
+    askPageNav(comments, currentPage)
+  } else {
+    sorting2.showMenu()
+  }
 }
 
 function searchComments(comments, keyword) {
@@ -83,4 +83,5 @@ function showWithPage(comments, start, end) {
   return comments.slice(start, end)
 }
 
-module.exports = {showMenu, sortComments, showData};
+let sorting2 = {showMenu, sortComments, showData}
+module.exports = sorting2

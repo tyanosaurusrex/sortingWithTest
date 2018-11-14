@@ -89,5 +89,6 @@ test('Case 2 show data with partially empty', () => {
   const spyShowMenu = jest.spyOn(sorting2, 'showMenu')
   spyShowMenu.mockImplementation(() => {});
   sorting2.showData(caseData.input, caseData.dataToShow)
+  spyShowMenu.mockRestore()
   expect(spy).toHaveBeenCalledWith(caseData.dataToShow);
 });
